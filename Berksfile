@@ -15,6 +15,5 @@ end
 
 cookbook 'cspp', github: 'gina-alaska/cspp-cookbook'
 cookbook 'rtstps', github: 'gina-alaska/rtstps-cookbook'
-cookbook 'sandy', path: 'cookbooks/sandy-rails'
 cookbook 'yum-gina', git: 'git@github.com:gina-alaska/yum-gina-cookbook'
 cookbook 'polar2grid', github: 'gina-alaska/polar2grid-cookbook'
