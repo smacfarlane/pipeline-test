@@ -1,9 +1,14 @@
-Create roles here, in either the Role Ruby DSL (.rb) or JSON (.json) files. To install roles on the server, use knife.
+# Using the Chef server
 
-For example, in this directory you'll find an example role file called `example.json` which can be uploaded to the Chef Server:
-    
-    knife role from file roles/example.json
+This repository contains knife and berkshelf configuration files for interacting with the Gilmore Creek Chef server
 
-For more information on roles, see the Chef wiki page:
-                               
-https://docs.getchef.com/essentials_roles.html
+The configuration files do not contain the address of the chef server, this will have to be added before running knife or berkshelf commands.
+
+
+## Knife
+
+knife command [options]  -c knife.rb  
+
+## Berkshelf
+
+berkshelf command [options] -c berkshelf.json

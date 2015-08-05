@@ -1,15 +1,21 @@
 source "https://supermarket.getchef.com"
 
 group :community do
-  cookbook 'jenkins'
-  cookbook 'java'
-  cookbook 'apt'
-  cookbook 'yum'
-  cookbook 'emacs'
-  cookbook 'git'
-  cookbook 'chef-zero'
-  cookbook 'chef-dk'
+  cookbook 'iptables-ng'
+  cookbook 'chruby'
+  cookbook 'ntp'
+  cookbook 'resolver'
+  cookbook 'chef-client'
+  cookbook 'postgresql'
+  cookbook 'redisio'
+  cookbook 'openssh'
+  cookbook 'logrotate', '~> 1.6.0'
+  cookbook 'chef-server'
 end
 
-cookbook 'pipeline', git: 'https://github.com/chef-solutions/pipeline.git'
-cookbook 'gitlab', git: 'https://github.com/chef-solutions/gitlab.git'
+cookbook 'cspp', github: 'gina-alaska/cspp-cookbook'
+cookbook 'rtstps', github: 'gina-alaska/rtstps-cookbook'
+cookbook 'sandy', path: 'cookbooks/sandy-rails'
+cookbook 'yum-gina', git: 'git@github.com:gina-alaska/yum-gina-cookbook'
+cookbook 'polar2grid', github: 'gina-alaska/polar2grid-cookbook'
+cookbook 'gina-gluster', git: 'git@github.com:gina-alaska/gina-gluster-cookbook'
